@@ -325,21 +325,11 @@ textarea.contact-input{resize:vertical;min-height:100px}
 .fpay-sm img{height:13px;object-fit:contain;filter:brightness(0) invert(.4)}
 
 /* ─── SCROLL REVEAL ─── */
-.anim{opacity:0;transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);will-change:opacity,transform}
+.anim{opacity:0;transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1),filter .6s cubic-bezier(.4,0,.2,1);will-change:opacity,transform,filter}
 .anim.up{transform:translateY(24px)}
-.anim.left{transform:translateX(-24px)}
-.anim.visible{opacity:1;transform:none}
+.anim.left{transform:scale(.94) translateY(10px);filter:blur(3px)}
+.anim.visible{opacity:1;transform:none;filter:none}
 
-/* ─── FLOATING CONTACT BUTTON ─── */
-.float-cta{position:fixed;bottom:28px;right:24px;z-index:9998;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
-.float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;color:#fff;text-decoration:none;box-shadow:0 4px 18px rgba(0,0,0,.22);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
-.float-btn::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.18);border-radius:50%;transform:scale(0);transition:transform .35s}
-.float-btn:hover::before{transform:scale(1)}
-.float-btn:hover{transform:translateY(-3px) scale(1.08);box-shadow:0 8px 28px rgba(0,0,0,.3);color:#fff}
-.float-btn.tg{background:linear-gradient(135deg,#0088cc,#006ba6)}
-.float-btn.ph{background:linear-gradient(135deg,#C0282C,#9B1C1C)}
-.float-btn.ph::after{content:"";position:absolute;inset:-3px;border-radius:50%;border:2.5px solid rgba(192,40,44,.4);animation:phoneRing 2.5s ease-in-out infinite}
-@keyframes phoneRing{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.18);opacity:0}}
 
 /* ─── BACK TO TOP ─── */
 #backTop{position:fixed;bottom:28px;left:24px;z-index:9998;width:44px;height:44px;border-radius:50%;background:var(--dark);color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.2);transition:all .3s;opacity:0;pointer-events:none;transform:translateY(12px)}
@@ -820,7 +810,7 @@ textarea.contact-input{resize:vertical;min-height:100px}
 .sp-card:nth-child(3)::after{animation-delay:1.6s;}
 .sp-card:nth-child(4)::after{animation-delay:2.4s;}
 
-/* ── INS-CARD fast ripple click ── */
+/* ── INS-CARD flash click ── */
 .ins-card{
   cursor:pointer;
   -webkit-tap-highlight-color:transparent;
@@ -829,14 +819,16 @@ textarea.contact-input{resize:vertical;min-height:100px}
 .ins-card .ripple{
   position:absolute;border-radius:50%;
   transform:scale(0);
-  background:rgba(192,40,44,.18);
-  animation:rippleFast .4s cubic-bezier(0,0,.2,1) forwards;
+  background:rgba(192,40,44,.22);
+  animation:rippleSnap .22s cubic-bezier(0,0,.2,1) forwards;
   pointer-events:none;
 }
-@keyframes rippleFast{
-  to{transform:scale(4);opacity:0;}
+@keyframes rippleSnap{
+  0%{transform:scale(0);opacity:1}
+  60%{transform:scale(3.5);opacity:.4}
+  100%{transform:scale(5);opacity:0}
 }
-.ins-card:active{transform:translateY(-3px) scale(.985);}
+.ins-card:active{transform:translateY(-2px) scale(.97);transition:transform .08s ease}
 
 </style>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1218,7 +1210,7 @@ textarea.contact-input{resize:vertical;min-height:100px}
 </section>
 
 <!-- ═══ XIZMATLAR ═══ -->
-<section class="sec sec-wh">
+<section class="sec sec-wh" style="overflow:hidden">
   <div class="container">
     <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 anim up" style="margin-bottom:28px">
       <div>
@@ -1781,7 +1773,7 @@ textarea.contact-input{resize:vertical;min-height:100px}
 </section>
 
 <!-- ═══ CONTACT FORM ═══ -->
-<section id="contact" class="sec sec-wh">
+<section id="contact" class="sec sec-wh" style="padding-top:96px">
   <div class="container">
     <div class="row g-5 align-items-start">
       <div class="col-lg-5 anim">
@@ -1943,14 +1935,10 @@ textarea.contact-input{resize:vertical;min-height:100px}
   </div>
 </div>
 
-<!-- FLOATING CONTACT BUTTONS -->
-<div class="float-cta">
-  <a href="https://t.me/kafilsugurta" target="_blank" class="float-btn tg" title="Telegram orqali murojaat">
-    <i class="fab fa-telegram-plane"></i>
-  </a>
-  <a href="tel:+998712000414" class="float-btn ph" title="Qo'ng'iroq qilish">
-    <i class="fas fa-phone"></i>
-  </a>
+<!-- LIGHTBOX MODAL -->
+<div id="lightboxModal" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.85);align-items:center;justify-content:center;cursor:zoom-out;backdrop-filter:blur(6px)" onclick="closeLightbox()">
+  <button onclick="closeLightbox();event.stopPropagation()" style="position:absolute;top:20px;right:24px;background:rgba(255,255,255,.12);border:none;color:#fff;width:42px;height:42px;border-radius:50%;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.22)'" onmouseout="this.style.background='rgba(255,255,255,.12)'">&times;</button>
+  <img id="lightboxImg" src="" alt="" style="max-width:90vw;max-height:88vh;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6);object-fit:contain" onclick="event.stopPropagation()">
 </div>
 
 <!-- BACK TO TOP -->
@@ -2271,6 +2259,29 @@ function animCount(el){
   }
 })();
 
+// ─── LIGHTBOX ───
+function openLightbox(src){
+  var m = document.getElementById('lightboxModal');
+  var img = document.getElementById('lightboxImg');
+  if(!m || !img) return;
+  img.src = src;
+  m.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  requestAnimationFrame(function(){
+    m.style.opacity = '1';
+    img.style.transform = 'scale(1)';
+  });
+}
+function closeLightbox(){
+  var m = document.getElementById('lightboxModal');
+  if(!m) return;
+  m.style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape') closeLightbox();
+});
+
 // ─── LANGUAGE SWITCHER TOAST ───
 (function(){
   var toast = document.createElement('div');
@@ -2304,7 +2315,7 @@ document.querySelectorAll('.btn-red,.btn-nav-cta,.svc-btn').forEach(function(btn
       'width:'+size+'px;height:'+size+'px;'+
       'left:'+(e.clientX-rect.left-size/2)+'px;top:'+(e.clientY-rect.top-size/2)+'px;'+
       'background:rgba(255,255,255,.22);transform:scale(0);'+
-      'animation:rippleFast .5s cubic-bezier(0,0,.2,1) forwards;';
+      'animation:rippleSnap .5s cubic-bezier(0,0,.2,1) forwards;';
     this.style.position='relative';
     this.style.overflow='hidden';
     this.appendChild(r);
