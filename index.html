@@ -14,6 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -873,13 +876,13 @@ textarea.contact-input{resize:vertical;min-height:100px}
         <img src="https://kafil.uz/public/assets/foto/logo.svg" alt="KAFIL SUG'URTA" style="height:46px;width:auto;object-fit:contain">
       </a>
       <div class="nav-links">
-        <a href="#" class="active" data-i18n="nav-home">Bosh sahifa</a>
-        <a href="#" data-i18n="nav-about">Biz haqimizda</a>
-        <a href="#" data-i18n="nav-services">Barcha xizmatlar</a>
+        <a href="https://kafil.uz/uz" class="active" data-i18n="nav-home">Bosh sahifa</a>
+        <a href="https://kafil.uz/uz/pages/biz-haqimizda" data-i18n="nav-about">Biz haqimizda</a>
+        <a href="https://kafil.uz/uz/allservices" data-i18n="nav-services">Barcha xizmatlar</a>
         <a href="#" data-i18n="nav-open">Ochiq ma&#39;lumotlar</a>
-        <a href="#" data-i18n="nav-interactive">Interaktiv xizmatlar</a>
-        <a href="#" data-i18n="nav-news">Yangiliklar</a>
-        <a href="#" data-i18n="nav-contact">Kontaktlar</a>
+        <a href="https://kafil.uz/uz/check_policy_form" data-i18n="nav-interactive">Interaktiv xizmatlar</a>
+        <a href="https://kafil.uz/uz/articles" data-i18n="nav-news">Yangiliklar</a>
+        <a href="https://kafil.uz/uz/contacts" data-i18n="nav-contact">Kontaktlar</a>
       </div>
       <button class="mob-menu-btn" id="mobMenuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
       <div class="nav-right">
@@ -925,286 +928,106 @@ textarea.contact-input{resize:vertical;min-height:100px}
 </div>
 <div class="mob-overlay" id="mobOverlay"></div>
 
-<!-- ═══ BANNER ═══ -->
-<section class="banner-sec">
-  <div class="container">
+<!-- ═══ HERO SLIDER (eskiz preview) ═══ -->
+<div class="slider ks-hero-wrap">
+  <div class="slider__list">
 
-    <!-- Banner card -->
-    <div class="banner-wrap" id="bnrWrap">
-
-      <!-- Slide 1 — Uy mulki -->
-      <div class="bnr-slide active">
-        <div class="bnr-left">
-          <div class="bnr-tag">Rasmiy sug&#39;urta &bull; № 0009 &bull; 2004-yildan</div>
-          <h1 class="bnr-title">Uyingizni va mol-mulkingizni<br>ishonchli himoyalang</h1>
-          <p class="bnr-sub">"KAFIL-SUG&#39;URTA" AJ — 21 yildan buyon O&#39;zbek sug&#39;urta bozorining yetakchi kompaniyasi.</p>
-          <div class="bnr-ctas">
-            <a href="#" class="bnr-btn-w"><i class="fas fa-file-contract"></i> Polis rasmiylashtirish</a>
-            <a href="#" class="bnr-btn-o">Xizmatlar <i class="fas fa-arrow-right"></i></a>
+    <!-- Slide 1 -->
+    <div class="slider__item ks-hero" style="background-image:url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80);">
+      <span class="ks-hero__overlay"></span>
+      <div class="container ks-hero__inner">
+        <div class="ks-hero__content">
+          <span class="ks-hero__tag"><i class="fas fa-certificate"></i> № 0009 &nbsp;·&nbsp; 2004</span>
+          <h1 class="ks-hero__title">KASKO — avtomobilingizni<br>to&#39;liq himoyalang</h1>
+          <div class="ks-hero__sub"><p>YTH, o&#39;g&#39;irlik, tabiiy ofat — barcha xavf-xatarlardan keng qamrovli himoya. Muzokarali narx.</p></div>
+          <div class="ks-hero__cta">
+            <a href="#" class="ks-hero__btn ks-hero__btn--primary">Polis rasmiylashtirish <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+            <a href="tel:+998712000414" class="ks-hero__btn ks-hero__btn--ghost"><i class="fas fa-phone-alt"></i> 71 200 04 14</a>
           </div>
-        </div>
-        <div class="bnr-right">
-          <div class="bnr-vis">
-            <div class="stat-panel">
-              <div class="stat-panel-row">
-                <div class="sp-card">
-                  <div class="sp-num" data-count="100">0</div>
-                  <div class="sp-lbl">Mijozlar (ming)</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="21">0</div>
-                  <div class="sp-lbl">Yil tajriba</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="9460">0</div>
-                  <div class="sp-lbl">To'lovlar</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="17">0</div>
-                  <div class="sp-lbl">Sug'urta klassi</div>
-                </div>
-              </div>
-              <div class="sp-wide">
-                <div class="sp-wide-ico"><i class="fas fa-shield-alt"></i></div>
-                <div class="sp-wide-txt">
-                  <strong>Davlat himoyasi</strong>
-                  <span>Litsenziya № 0009 · 2004-yildan</span>
-                </div>
-              </div>
-              <div class="sp-wide" style="padding:10px 18px;">
-                <div class="sp-pulse-dot"></div>
-                <span class="sp-pulse" style="margin:0">Onlayn xizmat faol — 24/7</span>
-              </div>
-            </div>
+          <div class="ks-hero__trust">
+            <span class="ks-hero__trust-item"><i class="fas fa-shield-alt"></i> Litsenziya № 0009</span>
+            <span class="ks-hero__trust-sep"></span>
+            <span class="ks-hero__trust-item"><i class="fas fa-bolt"></i> Onlayn xizmat · 24/7</span>
           </div>
-        </div>
-        <div class="bnr-arrow">
-          <button class="bnr-arr" id="bnrPrev"><i class="fas fa-chevron-left"></i></button>
-          <button class="bnr-arr" id="bnrNext"><i class="fas fa-chevron-right"></i></button>
         </div>
       </div>
+    </div>
 
-      <!-- Slide 2 — OSAGO -->
-      <div class="bnr-slide">
-        <div class="bnr-left">
-          <div class="bnr-tag">E-Polis &bull; Onlayn &bull; Onlayn</div>
-          <h1 class="bnr-title">OSAGO — 2 daqiqada<br>onlayn E-Polis oling</h1>
-          <p class="bnr-sub">Hujjat, navbat va kutish yo&#39;q. To&#39;g&#39;ridan-to&#39;g&#39;ri smartfondan rasmiylashtiring.</p>
-          <div class="bnr-ctas">
-            <a href="#" class="bnr-btn-w"><i class="fas fa-car"></i> E-Polis olish</a>
-            <a href="#" class="bnr-btn-o">Narxni bilish <i class="fas fa-arrow-right"></i></a>
+    <!-- Slide 2 -->
+    <div class="slider__item ks-hero" style="background-image:url(https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1920&q=80);">
+      <span class="ks-hero__overlay"></span>
+      <div class="container ks-hero__inner">
+        <div class="ks-hero__content">
+          <span class="ks-hero__tag"><i class="fas fa-certificate"></i> № 0009 &nbsp;·&nbsp; 2004</span>
+          <h1 class="ks-hero__title">Uyingiz va mol-mulkingizni<br>ishonchli himoyalang</h1>
+          <div class="ks-hero__sub"><p>"KAFIL-SUG&#39;URTA" AJ — 21 yildan buyon O&#39;zbek sug&#39;urta bozorining yetakchi kompaniyasi.</p></div>
+          <div class="ks-hero__cta">
+            <a href="#" class="ks-hero__btn ks-hero__btn--primary">Polis rasmiylashtirish <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+            <a href="tel:+998712000414" class="ks-hero__btn ks-hero__btn--ghost"><i class="fas fa-phone-alt"></i> 71 200 04 14</a>
           </div>
-        </div>
-        <div class="bnr-right">
-          <div class="bnr-vis">
-            <div class="stat-panel">
-              <div class="stat-panel-row">
-                <div class="sp-card">
-                  <div class="sp-num" data-count="100">0</div>
-                  <div class="sp-lbl">Mijozlar (ming)</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="21">0</div>
-                  <div class="sp-lbl">Yil tajriba</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="9460">0</div>
-                  <div class="sp-lbl">To'lovlar</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="17">0</div>
-                  <div class="sp-lbl">Sug'urta klassi</div>
-                </div>
-              </div>
-              <div class="sp-wide">
-                <div class="sp-wide-ico"><i class="fas fa-shield-alt"></i></div>
-                <div class="sp-wide-txt">
-                  <strong>Davlat himoyasi</strong>
-                  <span>Litsenziya № 0009 · 2004-yildan</span>
-                </div>
-              </div>
-              <div class="sp-wide" style="padding:10px 18px;">
-                <div class="sp-pulse-dot"></div>
-                <span class="sp-pulse" style="margin:0">Onlayn xizmat faol — 24/7</span>
-              </div>
-            </div>
+          <div class="ks-hero__trust">
+            <span class="ks-hero__trust-item"><i class="fas fa-shield-alt"></i> Litsenziya № 0009</span>
+            <span class="ks-hero__trust-sep"></span>
+            <span class="ks-hero__trust-item"><i class="fas fa-bolt"></i> Onlayn xizmat · 24/7</span>
           </div>
-        </div>
-        <div class="bnr-arrow">
-          <button class="bnr-arr" onclick="bnrGoTo(0)"><i class="fas fa-chevron-left"></i></button>
-          <button class="bnr-arr" onclick="bnrGoTo(2)"><i class="fas fa-chevron-right"></i></button>
         </div>
       </div>
+    </div>
 
-      <!-- Slide 3 — Sayohat -->
-      <div class="bnr-slide">
-        <div class="bnr-left">
-          <div class="bnr-tag">Xalqaro sayohat sug&#39;urtasi &bull; Visa uchun</div>
-          <h1 class="bnr-title">Xavfsiz sayohat —<br>osmon chegarasiz</h1>
-          <p class="bnr-sub">Schengen, AQSH, Osiyo — hamma yo&#39;nalish uchun. 7 kunlik 45 000 so&#39;mdan boshlab.</p>
-          <div class="bnr-ctas">
-            <a href="#" class="bnr-btn-w"><i class="fas fa-plane-departure"></i> Sayohat polisi</a>
-            <a href="#" class="bnr-btn-o">Batafsil <i class="fas fa-arrow-right"></i></a>
+    <!-- Slide 3 -->
+    <div class="slider__item ks-hero" style="background-image:url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80);">
+      <span class="ks-hero__overlay"></span>
+      <div class="container ks-hero__inner">
+        <div class="ks-hero__content">
+          <span class="ks-hero__tag"><i class="fas fa-certificate"></i> № 0009 &nbsp;·&nbsp; 2004</span>
+          <h1 class="ks-hero__title">Xavfsiz sayohat —<br>osmon chegarasiz</h1>
+          <div class="ks-hero__sub"><p>Schengen, AQSH, Osiyo — barcha yo&#39;nalishlar uchun sayohat sug&#39;urtasi. 7 kunlik 45 000 so&#39;mdan.</p></div>
+          <div class="ks-hero__cta">
+            <a href="#" class="ks-hero__btn ks-hero__btn--primary">Sayohat polisi <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+            <a href="tel:+998712000414" class="ks-hero__btn ks-hero__btn--ghost"><i class="fas fa-phone-alt"></i> 71 200 04 14</a>
           </div>
-        </div>
-        <div class="bnr-right">
-          <div class="bnr-vis">
-            <div class="stat-panel">
-              <div class="stat-panel-row">
-                <div class="sp-card">
-                  <div class="sp-num" data-count="100">0</div>
-                  <div class="sp-lbl">Mijozlar (ming)</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="21">0</div>
-                  <div class="sp-lbl">Yil tajriba</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="9460">0</div>
-                  <div class="sp-lbl">To'lovlar</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="17">0</div>
-                  <div class="sp-lbl">Sug'urta klassi</div>
-                </div>
-              </div>
-              <div class="sp-wide">
-                <div class="sp-wide-ico"><i class="fas fa-shield-alt"></i></div>
-                <div class="sp-wide-txt">
-                  <strong>Davlat himoyasi</strong>
-                  <span>Litsenziya № 0009 · 2004-yildan</span>
-                </div>
-              </div>
-              <div class="sp-wide" style="padding:10px 18px;">
-                <div class="sp-pulse-dot"></div>
-                <span class="sp-pulse" style="margin:0">Onlayn xizmat faol — 24/7</span>
-              </div>
-            </div>
+          <div class="ks-hero__trust">
+            <span class="ks-hero__trust-item"><i class="fas fa-shield-alt"></i> Litsenziya № 0009</span>
+            <span class="ks-hero__trust-sep"></span>
+            <span class="ks-hero__trust-item"><i class="fas fa-bolt"></i> Onlayn xizmat · 24/7</span>
           </div>
-        </div>
-        <div class="bnr-arrow">
-          <button class="bnr-arr" onclick="bnrGoTo(1)"><i class="fas fa-chevron-left"></i></button>
-          <button class="bnr-arr" onclick="bnrGoTo(3)"><i class="fas fa-chevron-right"></i></button>
         </div>
       </div>
-
-      <!-- Slide 4 — Sog&#39;liq -->
-      <div class="bnr-slide">
-        <div class="bnr-left">
-          <div class="bnr-tag">Shaxsiy sug&#39;urta &bull; Baxtsiz hodisa</div>
-          <h1 class="bnr-title">Sog&#39;ligingizni davlat<br>himoyasiga topshiring</h1>
-          <p class="bnr-sub">Qonuniy kafolatli moliyaviy himoya. Yillik 120 000 so&#39;mdan. 15 kun ichida to&#39;lov.</p>
-          <div class="bnr-ctas">
-            <a href="#" class="bnr-btn-w"><i class="fas fa-heartbeat"></i> Sog&#39;liq polisi</a>
-            <a href="#" class="bnr-btn-o">Batafsil <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="bnr-right">
-          <div class="bnr-vis">
-            <div class="stat-panel">
-              <div class="stat-panel-row">
-                <div class="sp-card">
-                  <div class="sp-num" data-count="100">0</div>
-                  <div class="sp-lbl">Mijozlar (ming)</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="21">0</div>
-                  <div class="sp-lbl">Yil tajriba</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="9460">0</div>
-                  <div class="sp-lbl">To'lovlar</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="17">0</div>
-                  <div class="sp-lbl">Sug'urta klassi</div>
-                </div>
-              </div>
-              <div class="sp-wide">
-                <div class="sp-wide-ico"><i class="fas fa-shield-alt"></i></div>
-                <div class="sp-wide-txt">
-                  <strong>Davlat himoyasi</strong>
-                  <span>Litsenziya № 0009 · 2004-yildan</span>
-                </div>
-              </div>
-              <div class="sp-wide" style="padding:10px 18px;">
-                <div class="sp-pulse-dot"></div>
-                <span class="sp-pulse" style="margin:0">Onlayn xizmat faol — 24/7</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bnr-arrow">
-          <button class="bnr-arr" onclick="bnrGoTo(2)"><i class="fas fa-chevron-left"></i></button>
-          <button class="bnr-arr" onclick="bnrGoTo(4)"><i class="fas fa-chevron-right"></i></button>
-        </div>
-      </div>
-
-      <!-- Slide 5 — KASKO -->
-      <div class="bnr-slide">
-        <div class="bnr-left">
-          <div class="bnr-tag">Avtomobil sug&#39;urtasi &bull; KASKO Standart</div>
-          <h1 class="bnr-title">KASKO — avtomobilingizni<br>to&#39;liq himoyalang</h1>
-          <p class="bnr-sub">YTH, o&#39;g&#39;irlik, tabiiy ofat — barcha xavf-xatarlardan keng qamrovli himoya. Muzokarali narx.</p>
-          <div class="bnr-ctas">
-            <a href="#" class="bnr-btn-w"><i class="fas fa-shield-alt"></i> Narx hisoblash</a>
-            <a href="#" class="bnr-btn-o">Batafsil <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="bnr-right">
-          <div class="bnr-vis">
-            <div class="stat-panel">
-              <div class="stat-panel-row">
-                <div class="sp-card">
-                  <div class="sp-num" data-count="100">0</div>
-                  <div class="sp-lbl">Mijozlar (ming)</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="21">0</div>
-                  <div class="sp-lbl">Yil tajriba</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="9460">0</div>
-                  <div class="sp-lbl">To'lovlar</div>
-                </div>
-                <div class="sp-card">
-                  <div class="sp-num" data-count="17">0</div>
-                  <div class="sp-lbl">Sug'urta klassi</div>
-                </div>
-              </div>
-              <div class="sp-wide">
-                <div class="sp-wide-ico"><i class="fas fa-shield-alt"></i></div>
-                <div class="sp-wide-txt">
-                  <strong>Davlat himoyasi</strong>
-                  <span>Litsenziya № 0009 · 2004-yildan</span>
-                </div>
-              </div>
-              <div class="sp-wide" style="padding:10px 18px;">
-                <div class="sp-pulse-dot"></div>
-                <span class="sp-pulse" style="margin:0">Onlayn xizmat faol — 24/7</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bnr-arrow">
-          <button class="bnr-arr" onclick="bnrGoTo(3)"><i class="fas fa-chevron-left"></i></button>
-          <button class="bnr-arr" onclick="bnrGoTo(0)"><i class="fas fa-chevron-right"></i></button>
-        </div>
-      </div>
-
-    </div><!-- /banner-wrap -->
-
-    <!-- Banner dots navigation -->
-    <div style="display:flex;gap:7px;justify-content:center;padding:14px 0 4px" id="bnrDots">
-      <button onclick="bnrGoTo(0)" style="width:28px;height:5px;border-radius:3px;background:var(--red);border:none;cursor:pointer;transition:all .3s;padding:0" class="bnr-dot active"></button>
-      <button onclick="bnrGoTo(1)" style="width:8px;height:5px;border-radius:3px;background:var(--border2);border:none;cursor:pointer;transition:all .3s;padding:0" class="bnr-dot"></button>
-      <button onclick="bnrGoTo(2)" style="width:8px;height:5px;border-radius:3px;background:var(--border2);border:none;cursor:pointer;transition:all .3s;padding:0" class="bnr-dot"></button>
-      <button onclick="bnrGoTo(3)" style="width:8px;height:5px;border-radius:3px;background:var(--border2);border:none;cursor:pointer;transition:all .3s;padding:0" class="bnr-dot"></button>
-      <button onclick="bnrGoTo(4)" style="width:8px;height:5px;border-radius:3px;background:var(--border2);border:none;cursor:pointer;transition:all .3s;padding:0" class="bnr-dot"></button>
     </div>
 
   </div>
-</section>
+</div>
+
+<style>
+.ks-hero-wrap{position:relative;background:#0f1422}
+.ks-hero-wrap .slider__list{margin:0;padding:0}
+.ks-hero.slider__item{position:relative;min-height:560px;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;display:block;overflow:hidden}
+.ks-hero__overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(12,16,28,.88) 0%,rgba(12,16,28,.62) 42%,rgba(12,16,28,.20) 72%,rgba(12,16,28,.05) 100%),linear-gradient(0deg,rgba(12,16,28,.45) 0%,rgba(12,16,28,0) 38%);pointer-events:none}
+.ks-hero__inner{position:relative;z-index:2;min-height:560px;display:flex;align-items:center}
+.ks-hero__content{max-width:600px;padding:40px 0}
+.ks-hero__tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;background:rgba(192,40,44,.92);padding:7px 16px;border-radius:50px;margin-bottom:20px;box-shadow:0 4px 14px rgba(192,40,44,.35)}
+.ks-hero__tag i{font-size:12px}
+.ks-hero__title{font-size:clamp(30px,4vw,52px);font-weight:800;line-height:1.12;letter-spacing:-.5px;color:#fff;margin:0 0 16px;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.ks-hero__sub{margin-bottom:30px}
+.ks-hero__sub p{font-size:clamp(15px,1.4vw,18px);line-height:1.65;color:rgba(255,255,255,.85);margin:0;max-width:520px}
+.ks-hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.ks-hero__btn{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;padding:14px 30px;border-radius:50px;text-decoration:none;cursor:pointer;transition:all .25s ease;border:1.5px solid transparent}
+.ks-hero__btn--primary{background:#C0282C;color:#fff;box-shadow:0 8px 24px rgba(192,40,44,.4)}
+.ks-hero__btn--primary:hover{background:#9B1C1C;color:#fff;transform:translateY(-2px);box-shadow:0 12px 30px rgba(192,40,44,.5)}
+.ks-hero__btn--ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.4);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.ks-hero__btn--ghost:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.85);color:#fff;transform:translateY(-2px)}
+.ks-hero__trust{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ks-hero__trust-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:rgba(255,255,255,.78)}
+.ks-hero__trust-item i{color:#E53935;font-size:14px}
+.ks-hero__trust-sep{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.35)}
+.ks-hero-wrap .slider__list .slick-dots{position:absolute;bottom:26px;left:0;right:0;display:flex!important;justify-content:center;gap:9px;list-style:none;margin:0;padding:0;z-index:5}
+.ks-hero-wrap .slider__list .slick-dots li{width:auto;height:auto;margin:0}
+.ks-hero-wrap .slider__list .slick-dots li button{width:9px;height:9px;padding:0;border-radius:50px;background:rgba(255,255,255,.45);border:none;text-indent:-9999px;overflow:hidden;cursor:pointer;transition:all .3s ease}
+.ks-hero-wrap .slider__list .slick-dots li button:before{display:none}
+.ks-hero-wrap .slider__list .slick-dots li.slick-active button{width:28px;background:#C0282C}
+@media (max-width:992px){.ks-hero.slider__item,.ks-hero__inner{min-height:480px}.ks-hero__content{max-width:100%}}
+@media (max-width:576px){.ks-hero.slider__item,.ks-hero__inner{min-height:520px}.ks-hero__overlay{background:linear-gradient(0deg,rgba(12,16,28,.9) 0%,rgba(12,16,28,.55) 55%,rgba(12,16,28,.35) 100%)}.ks-hero__content{padding:30px 0}.ks-hero__cta{flex-direction:column;align-items:flex-start}.ks-hero__btn{width:100%;justify-content:center}.ks-hero__trust{gap:10px}}
+</style>
 
 <!-- ═══ XIZMATLAR ═══ -->
 <section class="sec sec-wh" style="overflow:hidden">
@@ -2133,52 +1956,18 @@ document.querySelectorAll('.ins-card').forEach(function(card){
   obs.observe(document.querySelector('.stat-panel') || document.body);
 })();
 
-// ─── BANNER SLIDER ───
-var bnrSlides = document.querySelectorAll('.bnr-slide');
-var bnrStories = document.querySelectorAll('.bnr-story');
-var bnrDots = document.querySelectorAll('.bnr-dot');
-var bnrCur = 0;
-var bnrTimer;
-function bnrGoTo(n){
-  bnrSlides[bnrCur].classList.remove('active');
-  bnrStories[bnrCur] && bnrStories[bnrCur].classList.remove('active');
-  bnrDots[bnrCur] && (bnrDots[bnrCur].style.width='8px', bnrDots[bnrCur].style.background='var(--border2)', bnrDots[bnrCur].classList.remove('active'));
-  bnrCur = ((n % bnrSlides.length) + bnrSlides.length) % bnrSlides.length;
-  bnrSlides[bnrCur].classList.add('active');
-  bnrStories[bnrCur] && bnrStories[bnrCur].classList.add('active');
-  bnrDots[bnrCur] && (bnrDots[bnrCur].style.width='28px', bnrDots[bnrCur].style.background='var(--red)', bnrDots[bnrCur].classList.add('active'));
-  clearInterval(bnrTimer);
-  if(!prefersReducedMotion) bnrTimer = setInterval(function(){bnrGoTo(bnrCur+1);}, 5500);
-}
-var bnrPrevBtn = document.getElementById('bnrPrev');
-var bnrNextBtn = document.getElementById('bnrNext');
-if(bnrPrevBtn) bnrPrevBtn.addEventListener('click', function(){bnrGoTo(bnrCur-1);});
-if(bnrNextBtn) bnrNextBtn.addEventListener('click', function(){bnrGoTo(bnrCur+1);});
-bnrStories.forEach(function(s,i){
-  s.addEventListener('click',function(){bnrGoTo(i);});
-});
-function startBanner(){
-  if(!prefersReducedMotion && !bnrTimer) bnrTimer = setInterval(function(){bnrGoTo(bnrCur+1);}, 5500);
-}
-function stopBanner(){
-  clearInterval(bnrTimer);
-  bnrTimer = null;
-}
-document.addEventListener('visibilitychange', function(){
-  document.hidden ? stopBanner() : startBanner();
-});
-startBanner();
-
-// ─── SWIPE SUPPORT FOR BANNER ───
+// ─── HERO SLIDER (Slick — eskiz config) ───
 (function(){
-  var wrap = document.getElementById('bnrWrap');
-  if(!wrap) return;
-  var startX = 0;
-  wrap.addEventListener('touchstart', function(e){ startX = e.changedTouches[0].clientX; },{passive:true});
-  wrap.addEventListener('touchend', function(e){
-    var dx = e.changedTouches[0].clientX - startX;
-    if(Math.abs(dx) > 50) bnrGoTo(dx < 0 ? bnrCur+1 : bnrCur-1);
-  },{passive:true});
+  function initHero(){
+    if(window.jQuery && jQuery.fn && jQuery.fn.slick){
+      jQuery('.slider__list').slick({
+        dots:true, arrows:false, infinite:true,
+        autoplay:true, autoplaySpeed:5000, speed:1500, fade:true, cssEase:'ease'
+      });
+    }
+  }
+  if(window.jQuery){ jQuery(initHero); }
+  else { window.addEventListener('load', initHero); }
 })();
 
 // ─── SCROLL REVEAL (IntersectionObserver) ───
