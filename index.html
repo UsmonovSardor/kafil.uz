@@ -83,8 +83,8 @@ img{max-width:100%;display:block}
 /* ─── BANNER ─── */
 .banner-sec{padding:20px 0 0}
 .banner-wrap{border-radius:var(--r3);overflow:hidden;position:relative;height:460px;min-height:320px;background:#9B1C1C}
-.bnr-slide{position:absolute;inset:0;display:flex;align-items:center;padding:0 60px;opacity:0;transition:opacity .8s ease;z-index:0}
-.bnr-slide.active{opacity:1;z-index:1}
+.bnr-slide{position:absolute;inset:0;display:flex;align-items:center;padding:0 60px;opacity:0;transition:opacity .35s ease;z-index:0;pointer-events:none}
+.bnr-slide.active{opacity:1;z-index:1;pointer-events:all}
 .bnr-slide:nth-child(1){background:linear-gradient(115deg,#9B1C1C 0%,#C62828 45%,#EF5350 100%)}
 .bnr-slide:nth-child(2){background:linear-gradient(115deg,#1E3A8A 0%,#2563EB 45%,#60A5FA 100%)}
 .bnr-slide:nth-child(3){background:linear-gradient(115deg,#064E3B 0%,#059669 45%,#34D399 100%)}
