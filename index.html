@@ -82,8 +82,8 @@ img{max-width:100%;display:block}
 
 /* ─── BANNER ─── */
 .banner-sec{padding:20px 0 0}
-.banner-wrap{border-radius:var(--r3);overflow:hidden;position:relative;height:460px;min-height:320px;background:#9B1C1C}
-.bnr-slide{position:absolute;inset:0;display:flex;align-items:center;padding:0 60px;opacity:0;transition:opacity .35s ease;z-index:0;pointer-events:none}
+.banner-wrap{border-radius:var(--r3);overflow:hidden;position:relative;height:400px;min-height:320px;background:#9B1C1C}
+.bnr-slide{position:absolute;inset:0;display:flex;align-items:flex-start;padding:52px 60px 0;opacity:0;transition:opacity .35s ease;z-index:0;pointer-events:none}
 .bnr-slide.active{opacity:1;z-index:1;pointer-events:all}
 .bnr-slide:nth-child(1){background:linear-gradient(115deg,#9B1C1C 0%,#C62828 45%,#EF5350 100%)}
 .bnr-slide:nth-child(2){background:linear-gradient(115deg,#1E3A8A 0%,#2563EB 45%,#60A5FA 100%)}
@@ -105,7 +105,7 @@ img{max-width:100%;display:block}
 .bnr-btn-w:hover{background:var(--bg2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.2);color:var(--red2)}
 .bnr-btn-o{background:transparent;border:1.5px solid rgba(255,255,255,.45);color:#fff;padding:9px 22px;border-radius:var(--r4);font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:var(--tr)}
 .bnr-btn-o:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.8);transform:translateY(-1px)}
-.bnr-right{width:280px;flex-shrink:0;position:relative;z-index:2;align-self:center;display:flex;align-items:center;flex-direction:column}
+.bnr-right{width:280px;flex-shrink:0;position:relative;z-index:2;align-self:flex-start;display:flex;align-items:flex-start;flex-direction:column}
 .bnr-vis{width:100%;height:100%;display:flex;align-items:stretch}
 /* ── Full-height panel ── */
 .bnr-mkt{width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px 16px;gap:10px}
@@ -441,8 +441,8 @@ textarea.contact-input{resize:vertical;min-height:100px}
   .nav-right .nav-search{display:flex}
   .nav-wrap{justify-content:space-between}
 
-  .banner-wrap{height:340px;min-height:260px}
-  .bnr-slide{position:absolute;inset:0;padding:0 28px;flex-direction:row;gap:0;align-items:center}
+  .banner-wrap{height:320px;min-height:260px}
+  .bnr-slide{position:absolute;inset:0;padding:36px 28px 0;flex-direction:row;gap:0;align-items:flex-start}
   .bnr-right{display:none!important}
   .bnr-slides{display:none}
   .bnr-left{width:100%}
