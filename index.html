@@ -258,7 +258,7 @@ img{max-width:100%;display:block}
 .pay-chip img{max-height:26px;max-width:60px;object-fit:contain}
 
 /* ─── FOOTER ─── */
-footer{background:#1A2B4A;border-top:none}
+footer{background:#fff;border-top:1px solid #E2E8F0}
 .footer-main{padding:56px 0 36px}
 .fl-logo img{width:40px;height:40px;object-fit:contain;border-radius:4px}
 .fl-name strong{font-size:17px;font-weight:700;color:var(--dark);display:block;line-height:1.1}
@@ -1916,43 +1916,42 @@ textarea.contact-input{resize:vertical;min-height:100px}
 </section>
 
 <!-- ═══ FOOTER ═══ -->
-<footer>
+<footer style="background:#fff;border-top:1px solid #E2E8F0">
   <!-- Main footer -->
-  <div style="background:#1A2B4A;border-top:1px solid rgba(255,255,255,.08);padding:56px 0 40px">
+  <div style="padding:52px 0 36px">
     <div class="container">
-      <div style="display:flex;align-items:flex-start;gap:60px;flex-wrap:wrap">
+      <div style="display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:start">
 
-        <!-- Logo block -->
-        <div style="flex-shrink:0;width:220px">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-            <img src="https://kafil.uz/public/assets/foto/logo.svg" alt="KAFIL SUG'URTA" style="height:52px;width:auto;object-fit:contain">
-          </div>
-          <p style="font-size:13px;color:rgba(255,255,255,.45);line-height:1.7;margin-bottom:18px">"KAFIL-SUG'URTA" AJ — O'ZR Moliya vazirligi litsenziyasi (№ 0009) asosida 2004-yildan barcha 17 ta sug'urta klassi bo'yicha rasmiy xizmat.</p>
-          <!-- Social icons -->
+        <!-- Logo + info -->
+        <div>
+          <a href="https://kafil.uz" style="display:inline-block;margin-bottom:18px">
+            <img src="https://kafil.uz/public/assets/foto/logo.svg" alt="KAFIL SUG'URTA" style="height:56px;width:auto;object-fit:contain">
+          </a>
+          <p style="font-size:13px;color:#718096;line-height:1.7;margin-bottom:18px">"KAFIL-SUG'URTA" AJ — O'ZR Moliya vazirligi litsenziyasi (№ 0009) asosida 2004-yildan barcha 17 ta sug'urta klassi bo'yicha rasmiy xizmat.</p>
           <div style="display:flex;gap:8px;margin-bottom:16px">
-            <a href="https://t.me/kafilsugurta" target="_blank" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='rgba(255,255,255,.5)';this.style.borderColor='rgba(255,255,255,.15)'"><i class="fab fa-telegram-plane"></i></a>
-            <a href="#" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='rgba(255,255,255,.5)';this.style.borderColor='rgba(255,255,255,.15)'"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='rgba(255,255,255,.5)';this.style.borderColor='rgba(255,255,255,.15)'"><i class="fab fa-instagram"></i></a>
-            <a href="#" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='rgba(255,255,255,.5)';this.style.borderColor='rgba(255,255,255,.15)'"><i class="fab fa-youtube"></i></a>
-            <a href="#" style="width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='rgba(255,255,255,.5)';this.style.borderColor='rgba(255,255,255,.15)'"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://t.me/kafilsugurta" target="_blank" style="width:34px;height:34px;border-radius:50%;border:1.5px solid #E2E8F0;display:flex;align-items:center;justify-content:center;color:#718096;font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='#718096';this.style.borderColor='#E2E8F0'"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#" style="width:34px;height:34px;border-radius:50%;border:1.5px solid #E2E8F0;display:flex;align-items:center;justify-content:center;color:#718096;font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='#718096';this.style.borderColor='#E2E8F0'"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" style="width:34px;height:34px;border-radius:50%;border:1.5px solid #E2E8F0;display:flex;align-items:center;justify-content:center;color:#718096;font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='#718096';this.style.borderColor='#E2E8F0'"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="width:34px;height:34px;border-radius:50%;border:1.5px solid #E2E8F0;display:flex;align-items:center;justify-content:center;color:#718096;font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='#718096';this.style.borderColor='#E2E8F0'"><i class="fab fa-youtube"></i></a>
+            <a href="#" style="width:34px;height:34px;border-radius:50%;border:1.5px solid #E2E8F0;display:flex;align-items:center;justify-content:center;color:#718096;font-size:13px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='#C0282C';this.style.color='#fff';this.style.borderColor='#C0282C'" onmouseout="this.style.background='';this.style.color='#718096';this.style.borderColor='#E2E8F0'"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <div style="display:flex;align-items:flex-start;gap:6px;font-size:12px;color:rgba(255,255,255,.35)">
-            <i class="fas fa-map-marker-alt" style="color:#C0282C;margin-top:3px;flex-shrink:0;font-size:10px"></i>
+          <div style="display:flex;align-items:flex-start;gap:6px;font-size:12px;color:#718096">
+            <i class="fas fa-map-marker-alt" style="color:#C0282C;margin-top:2px;flex-shrink:0;font-size:10px"></i>
             <span>100000, Toshkent, Mirzo Ulug'bek tumani, Mustaqillik shoh ko'chasi, 59</span>
           </div>
         </div>
 
         <!-- Nav links — 2 columns -->
-        <div style="flex:1;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 40px;min-width:300px">
-          <a href="#" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Bosh sahifa</a>
-          <a href="#" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Yangiliklar</a>
-          <a href="#" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Biz haqimizda</a>
-          <a href="#" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Galereya</a>
-          <a href="#" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Jismoniy shaxslarga</a>
-          <a href="#contact" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Aloqa</a>
-          <a href="#" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Yuridik shaxslarga</a>
-          <a href="#" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Xodimlar uchun</a>
-          <a href="#" style="font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);grid-column:span 2;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">Shaxsiy ma'lumotlarning maxfiyligi siyosati</a>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px 48px">
+          <a href="https://kafil.uz/uz" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Bosh sahifa</a>
+          <a href="https://kafil.uz/uz/news" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Yangiliklar</a>
+          <a href="https://kafil.uz/uz/about" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Biz haqimizda</a>
+          <a href="https://kafil.uz/uz/gallery" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Galereya</a>
+          <a href="https://kafil.uz/uz/individual" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Jismoniy shaxslarga</a>
+          <a href="#contact" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Aloqa</a>
+          <a href="https://kafil.uz/uz/corporate" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Yuridik shaxslarga</a>
+          <a href="https://kafil.uz/uz/jobs" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Xodimlar uchun</a>
+          <a href="https://kafil.uz/uz/privacy" style="font-size:14px;color:#2D3748;text-decoration:none;padding:7px 0;border-bottom:1px solid #F7F9FC;grid-column:span 2;transition:color .2s" onmouseover="this.style.color='#C0282C'" onmouseout="this.style.color='#2D3748'">Shaxsiy ma'lumotlarning maxfiyligi siyosati</a>
         </div>
 
       </div>
@@ -1960,7 +1959,7 @@ textarea.contact-input{resize:vertical;min-height:100px}
   </div>
 
   <!-- Payment row -->
-  <div style="background:rgba(0,0,0,.2);border-top:1px solid rgba(255,255,255,.07);padding:20px 0">
+  <div style="background:#F7F9FC;border-top:1px solid #E2E8F0;padding:18px 0">
     <div class="container">
       <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
         <img loading="lazy" src="https://kafil.uz/public/assets/foto/footer-logo/payme.png" style="height:28px;object-fit:contain" alt="Payme">
@@ -1975,13 +1974,13 @@ textarea.contact-input{resize:vertical;min-height:100px}
   </div>
 
   <!-- Bottom bar -->
-  <div style="background:rgba(0,0,0,.25);border-top:1px solid rgba(255,255,255,.06);padding:14px 0">
+  <div style="background:#fff;border-top:1px solid #E2E8F0;padding:13px 0">
     <div class="container">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
-        <p style="font-size:12.5px;color:rgba(255,255,255,.25);margin:0">
-          Sayt materiallaridan foydalanishda <a href="https://kafil.uz" style="color:#E53935;text-decoration:none;font-weight:600">kafil.uz</a> veb-saytga havola bo'lishi shart.
+        <p style="font-size:12.5px;color:#A0AEC0;margin:0">
+          Sayt materiallaridan foydalanishda <a href="https://kafil.uz" style="color:#C0282C;text-decoration:none;font-weight:600">kafil.uz</a> veb-saytga havola bo'lishi shart.
         </p>
-        <p style="font-size:12.5px;color:rgba(255,255,255,.25);margin:0">© Copyright 2026 — "KAFIL-SUG'URTA" Barcha huquqlar himoyalangan</p>
+        <p style="font-size:12.5px;color:#A0AEC0;margin:0">© Copyright 2026 — "KAFIL-SUG'URTA" Barcha huquqlar himoyalangan</p>
       </div>
     </div>
   </div>
