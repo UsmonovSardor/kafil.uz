@@ -180,7 +180,8 @@ img{max-width:100%;display:block}
 .svc-title{font-size:16px;font-weight:700;color:var(--dark);margin-bottom:7px}
 .svc-desc{font-size:13px;color:var(--gray);line-height:1.65;flex:1;margin-bottom:18px}
 .svc-price{font-size:12px;font-weight:700;color:var(--red);background:var(--rs2);padding:4px 10px;border-radius:6px;align-self:flex-start;margin-bottom:14px}
-.svc-btn{background:var(--red);color:#fff;padding:10px;border-radius:var(--r);font-size:13.5px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:7px;transition:var(--tr);margin-top:auto}
+.svc-card{cursor:pointer}
+.svc-btn{background:var(--red);color:#fff;padding:10px;border-radius:var(--r);font-size:13.5px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:7px;transition:var(--tr);margin-top:auto;cursor:pointer}
 .svc-btn:hover{background:var(--red2);color:#fff;transform:translateY(-1px)}
 @media(max-width:768px){.svc-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:576px){.svc-grid{grid-template-columns:1fr}}
@@ -213,6 +214,7 @@ img{max-width:100%;display:block}
 .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;align-items:stretch}
 .nc{background:var(--white);border-radius:var(--r2);overflow:hidden;box-shadow:var(--sh);transition:var(--tr)}
 .nc:hover{box-shadow:var(--sh2);transform:translateY(-3px)}
+.nc{cursor:pointer}
 .nc-img{height:180px;overflow:hidden}
 .nc-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
 .nc:hover .nc-img img{transform:scale(1.04)}
@@ -1800,6 +1802,33 @@ textarea.contact-input{resize:vertical;min-height:100px}
           <div style="font-size:13px;font-weight:700;color:var(--dark)">Sultonov Mamurjon</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BAND ═══ -->
+<section style="background:linear-gradient(135deg,#9B1C1C 0%,#C0282C 50%,#E53935 100%);padding:60px 0;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:28px 28px;pointer-events:none"></div>
+  <div class="container" style="position:relative;z-index:1;text-align:center">
+    <div style="display:inline-flex;align-items:center;gap:8px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:rgba(255,255,255,.5);margin-bottom:14px">
+      <span style="width:20px;height:1.5px;background:rgba(255,255,255,.3);display:inline-block"></span>
+      Hoziroq boshlang
+      <span style="width:20px;height:1.5px;background:rgba(255,255,255,.3);display:inline-block"></span>
+    </div>
+    <h2 style="font-size:clamp(22px,3vw,36px);font-weight:800;color:#fff;margin-bottom:12px;letter-spacing:-.4px">Sug'urta polisini rasmiylashtiring —<br>2 daqiqada, onlayn, hujjatsiz</h2>
+    <p style="color:rgba(255,255,255,.65);font-size:15px;max-width:520px;margin:0 auto 32px;line-height:1.7">21 yil davomida 100 000+ mijozga xizmat ko'rsatdik. 15 kun ichida to'lov kafolati.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="https://kafil.uz/uz/osago" target="_blank" style="background:#fff;color:#C0282C;padding:14px 32px;border-radius:50px;font-weight:700;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:9px;transition:all .25s;box-shadow:0 4px 20px rgba(0,0,0,.2)" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 28px rgba(0,0,0,.28)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(0,0,0,.2)'">
+        <i class="fas fa-shield-alt"></i> OSAGO E-polis olish
+      </a>
+      <a href="tel:+998712000414" style="background:rgba(255,255,255,.12);color:#fff;padding:14px 32px;border-radius:50px;font-weight:600;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:9px;border:1.5px solid rgba(255,255,255,.3);transition:all .25s;backdrop-filter:blur(6px)" onmouseover="this.style.background='rgba(255,255,255,.22)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255,255,255,.12)';this.style.transform=''">
+        <i class="fas fa-phone"></i> 71 200 04 14
+      </a>
+    </div>
+    <div style="display:flex;justify-content:center;gap:28px;margin-top:28px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.55);font-size:12.5px"><i class="fas fa-check-circle" style="color:rgba(255,255,255,.45)"></i> Litsenziya № 0009</div>
+      <div style="display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.55);font-size:12.5px"><i class="fas fa-check-circle" style="color:rgba(255,255,255,.45)"></i> 15 kun ichida to'lov</div>
+      <div style="display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.55);font-size:12.5px"><i class="fas fa-check-circle" style="color:rgba(255,255,255,.45)"></i> 24/7 qo'llab-quvvatlash</div>
     </div>
   </div>
 </section>
