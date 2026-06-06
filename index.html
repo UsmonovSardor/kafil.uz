@@ -1291,9 +1291,9 @@ textarea.contact-input{resize:vertical;min-height:100px}
                onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform=''"
                onclick="openLightbox(this.src)">
           <!-- Gradient overlay -->
-          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(26,43,74,.55) 100%)"></div>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(26,43,74,.55) 100%);pointer-events:none"></div>
           <!-- Logo badge bottom-left -->
-          <div style="position:absolute;bottom:20px;left:20px;display:flex;align-items:center;gap:12px">
+          <div style="position:absolute;bottom:20px;left:20px;display:flex;align-items:center;gap:12px;pointer-events:none">
             <div style="width:52px;height:52px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,.3);border-radius:14px;display:flex;align-items:center;justify-content:center">
               <svg width="32" height="32" viewBox="0 0 44 44" fill="none"><path d="M22 6L37 14.5V31.5L22 40L7 31.5V14.5L22 6Z" fill="none" stroke="white" stroke-width="2"/><text x="22" y="27" text-anchor="middle" fill="white" font-size="11" font-weight="700" font-family="DM Sans,sans-serif">KS</text></svg>
             </div>
@@ -1385,40 +1385,77 @@ textarea.contact-input{resize:vertical;min-height:100px}
 </section>
 
 <!-- ═══ AFZALLIKLAR ═══ -->
-<section class="sec" style="background:#F0F2F7;padding:72px 0">
+<section class="sec" style="background:#F0F2F7;padding:80px 0;position:relative;overflow:hidden">
+  <!-- Decorative bg line -->
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,var(--red),transparent);opacity:.5"></div>
   <div class="container">
-    <div class="text-center anim up">
+    <div class="text-center anim up" style="margin-bottom:48px">
       <div class="sec-tag" style="justify-content:center">Nima uchun Kafil?</div>
-      <h2 class="sec-heading">Bizning afzalliklarimiz</h2>
+      <h2 class="sec-heading" style="margin-bottom:10px">Bizning afzalliklarimiz</h2>
+      <p class="sec-sub" style="max-width:480px;margin:0 auto">21 yil davomida 100 000+ mijozga xizmat ko'rsatdik — sifat va ishonch bizning asosimiz</p>
     </div>
-    <div class="adv-grid">
-      <div class="adv-card anim up" style="transition-delay:.06s">
-        <div class="adv-n">01</div>
-        <div class="adv-ico"><i class="fas fa-university"></i></div>
-        <div class="adv-title">Davlat tomonidan tasdiqlangan</div>
-        <div class="adv-text">Moliya Vazirligi № 0009 litsenziyasi asosida. Barcha polislar qonuniy kuchga ega va rasmiy registrda.</div>
+
+    <!-- 2x2 premium grid -->
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px" class="adv-premium-grid">
+
+      <!-- Card 1 -->
+      <div class="anim up" style="transition-delay:.06s;background:#fff;border-radius:20px;padding:32px;display:flex;gap:20px;align-items:flex-start;box-shadow:0 2px 20px rgba(0,0,0,.06);border:1.5px solid transparent;transition:all .3s;cursor:default" onmouseover="this.style.borderColor='rgba(192,40,44,.2)';this.style.boxShadow='0 8px 32px rgba(192,40,44,.1)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='transparent';this.style.boxShadow='0 2px 20px rgba(0,0,0,.06)';this.style.transform=''">
+        <div style="width:60px;height:60px;background:linear-gradient(135deg,#FFF0F0,#FFE4E4);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <i class="fas fa-university" style="font-size:22px;color:#C0282C"></i>
+        </div>
+        <div>
+          <div style="font-size:10px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">01</div>
+          <h3 style="font-size:17px;font-weight:700;color:var(--dark);margin-bottom:10px;line-height:1.3">Davlat tomonidan tasdiqlangan</h3>
+          <p style="font-size:13.5px;color:var(--gray);line-height:1.7;margin:0">Moliya Vazirligi № 0009 litsenziyasi asosida. Barcha polislar qonuniy kuchga ega va rasmiy registrda.</p>
+          <div style="display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12px;font-weight:700;color:var(--red)"><i class="fas fa-check-circle"></i> Rasmiy tasdiqlangan</div>
+        </div>
       </div>
-      <div class="adv-card anim up" style="transition-delay:.12s">
-        <div class="adv-n">02</div>
-        <div class="adv-ico"><i class="fas fa-file-contract"></i></div>
-        <div class="adv-title">Qonuniy kafolat</div>
-        <div class="adv-text">Sug&#39;urta shartnomasi O&#39;zbekiston qonunchiligiga muvofiq tuziladi. Huquqlaringiz himoyalangan.</div>
+
+      <!-- Card 2 -->
+      <div class="anim up" style="transition-delay:.12s;background:#fff;border-radius:20px;padding:32px;display:flex;gap:20px;align-items:flex-start;box-shadow:0 2px 20px rgba(0,0,0,.06);border:1.5px solid transparent;transition:all .3s;cursor:default" onmouseover="this.style.borderColor='rgba(192,40,44,.2)';this.style.boxShadow='0 8px 32px rgba(192,40,44,.1)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='transparent';this.style.boxShadow='0 2px 20px rgba(0,0,0,.06)';this.style.transform=''">
+        <div style="width:60px;height:60px;background:linear-gradient(135deg,#FFF0F0,#FFE4E4);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <i class="fas fa-file-contract" style="font-size:22px;color:#C0282C"></i>
+        </div>
+        <div>
+          <div style="font-size:10px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">02</div>
+          <h3 style="font-size:17px;font-weight:700;color:var(--dark);margin-bottom:10px;line-height:1.3">Qonuniy kafolat</h3>
+          <p style="font-size:13.5px;color:var(--gray);line-height:1.7;margin:0">Sug'urta shartnomasi O'zbekiston qonunchiligiga muvofiq tuziladi. Huquqlaringiz himoyalangan.</p>
+          <div style="display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12px;font-weight:700;color:var(--red)"><i class="fas fa-check-circle"></i> Yuridik himoya</div>
+        </div>
       </div>
-      <div class="adv-card anim up" style="transition-delay:.18s">
-        <div class="adv-n">03</div>
-        <div class="adv-ico"><i class="fas fa-headset"></i></div>
-        <div class="adv-title">24/7 Aloqa markazi</div>
-        <div class="adv-text">Mutaxassis maslahatchilar xizmatida. Hodisa yuz bersa — darhol murojaat qiling: 71 200 04 14.</div>
+
+      <!-- Card 3 -->
+      <div class="anim up" style="transition-delay:.18s;background:#fff;border-radius:20px;padding:32px;display:flex;gap:20px;align-items:flex-start;box-shadow:0 2px 20px rgba(0,0,0,.06);border:1.5px solid transparent;transition:all .3s;cursor:default" onmouseover="this.style.borderColor='rgba(192,40,44,.2)';this.style.boxShadow='0 8px 32px rgba(192,40,44,.1)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='transparent';this.style.boxShadow='0 2px 20px rgba(0,0,0,.06)';this.style.transform=''">
+        <div style="width:60px;height:60px;background:linear-gradient(135deg,#FFF0F0,#FFE4E4);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <i class="fas fa-headset" style="font-size:22px;color:#C0282C"></i>
+        </div>
+        <div>
+          <div style="font-size:10px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">03</div>
+          <h3 style="font-size:17px;font-weight:700;color:var(--dark);margin-bottom:10px;line-height:1.3">24/7 Aloqa markazi</h3>
+          <p style="font-size:13.5px;color:var(--gray);line-height:1.7;margin:0">Mutaxassis maslahatchilar xizmatida. Hodisa yuz bersa — darhol murojaat qiling: 71 200 04 14.</p>
+          <div style="display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12px;font-weight:700;color:var(--red)"><i class="fas fa-check-circle"></i> Har doim aloqada</div>
+        </div>
       </div>
-      <div class="adv-card anim up" style="transition-delay:.24s">
-        <div class="adv-n">04</div>
-        <div class="adv-ico"><i class="fas fa-balance-scale"></i></div>
-        <div class="adv-title">15 kun ichida to&#39;lov</div>
-        <div class="adv-text">Sug&#39;urta to&#39;lovi qonun talabiga ko&#39;ra 15 ish kunida amalga oshiriladi. Kechikish bo&#39;lmaydi.</div>
+
+      <!-- Card 4 -->
+      <div class="anim up" style="transition-delay:.24s;background:linear-gradient(135deg,#C0282C 0%,#9B1C1C 100%);border-radius:20px;padding:32px;display:flex;gap:20px;align-items:flex-start;box-shadow:0 8px 28px rgba(192,40,44,.28);border:1.5px solid transparent;transition:all .3s;cursor:default" onmouseover="this.style.boxShadow='0 12px 36px rgba(192,40,44,.38)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='0 8px 28px rgba(192,40,44,.28)';this.style.transform=''">
+        <div style="width:60px;height:60px;background:rgba(255,255,255,.18);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1.5px solid rgba(255,255,255,.25)">
+          <i class="fas fa-balance-scale" style="font-size:22px;color:#fff"></i>
+        </div>
+        <div>
+          <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">04</div>
+          <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.3">15 kun ichida to'lov</h3>
+          <p style="font-size:13.5px;color:rgba(255,255,255,.75);line-height:1.7;margin:0">Sug'urta to'lovi qonun talabiga ko'ra 15 ish kunida amalga oshiriladi. Kechikish bo'lmaydi.</p>
+          <div style="display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12px;font-weight:700;color:#fff"><i class="fas fa-check-circle"></i> Kafolatli to'lov</div>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
+<style>
+@media(max-width:768px){.adv-premium-grid{grid-template-columns:1fr!important}}
+</style>
 
 <!-- ═══ HAMKORLAR ═══ -->
 <section class="sec sec-wh">
