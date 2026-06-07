@@ -1501,8 +1501,45 @@ html{overflow-x:clip}
   /* ── CLIENTS slider — kichikroq ── */
   .cli-logo{min-width:80px!important;padding:8px 10px!important;height:52px!important}
 
-  /* ── FOOTER ── */
-  .footer-main .container > div[style*="grid"]{grid-template-columns:1fr 1fr!important;gap:24px 16px!important}
+  /* ── NAVBAR: navbar va container full width ── */
+  .navbar .container{width:100%!important;max-width:100%!important;flex:1!important}
+  .nav-wrap{width:100%!important;position:relative!important;flex:1!important}
+  /* Hamburger: o'ng chekkaga mutlaq */
+  .mob-menu-btn{
+    position:absolute!important;
+    right:0!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    margin-left:0!important;
+  }
+  /* Search: hamburgerdan 44px chapda */
+  .nav-right{
+    position:absolute!important;
+    right:44px!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    gap:0!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+  .nav-right .nav-search{display:flex!important;padding:4px!important}
+
+  /* ── FOOTER: 260px+1fr → 1 ustun ── */
+  footer div[style*="260px"]{
+    grid-template-columns:1fr!important;
+    gap:24px!important;
+  }
+  /* Footer nav links: 2 ustun qoladi, lekin gap kichik */
+  footer div[style*="repeat(2,1fr)"]{
+    gap:2px 10px!important;
+  }
+  footer div[style*="gap:60px"]{gap:24px!important}
+  footer div[style*="padding:52px"]{padding:28px 0 20px!important}
+  /* Footer links font kichraytirish */
+  footer div[style*="repeat(2,1fr)"] a{
+    font-size:12.5px!important;
+    padding:5px 0!important;
+  }
 }
 
 @media(max-width:480px){
