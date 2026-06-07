@@ -11,13 +11,30 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kafil.uz">
 <meta name="theme-color" content="#C0282C">
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="https://kafil.uz/public/assets/foto/logo.svg">
+<link rel="apple-touch-icon" href="https://kafil.uz/public/assets/foto/logo.svg">
+<!-- OG Image -->
+<meta property="og:image" content="https://kafil.uz/storage/pages-s/November2022/4oxu56aFKxahlA9eEQQL.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kafil.uz/storage/pages-s/November2022/4oxu56aFKxahlA9eEQQL.png">
+<!-- Preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<!-- Fonts: preload + swap -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<!-- Font Awesome: async -->
+<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+<!-- Slick CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -86,14 +103,6 @@ img{max-width:100%;display:block}
 /* ─── BANNER ─── */
 .banner-sec{padding:20px 0 0}
 .banner-wrap{border-radius:var(--r3);overflow:hidden;position:relative;height:400px;min-height:320px;background:#9B1C1C}
-.bnr-slide{position:absolute;inset:0;display:flex;align-items:flex-start;padding:52px 60px 0;opacity:0;transition:opacity .35s ease;z-index:0;pointer-events:none}
-.bnr-slide.active{opacity:1;z-index:1;pointer-events:all}
-.bnr-slide:nth-child(1){background:linear-gradient(115deg,#9B1C1C 0%,#C62828 45%,#EF5350 100%)}
-.bnr-slide:nth-child(2){background:linear-gradient(115deg,#1E3A8A 0%,#2563EB 45%,#60A5FA 100%)}
-.bnr-slide:nth-child(3){background:linear-gradient(115deg,#064E3B 0%,#059669 45%,#34D399 100%)}
-.bnr-slide:nth-child(4){background:linear-gradient(115deg,#312E81 0%,#4338CA 45%,#818CF8 100%)}
-.bnr-slide:nth-child(5){background:linear-gradient(115deg,#1C1917 0%,#44403C 45%,#A8A29E 100%)}
-
 /* banner grid overlay */
 .bnr-slide::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
 
@@ -351,9 +360,6 @@ textarea.contact-input{resize:vertical;min-height:100px}
 .maint-track .info i{color:#60a5fa}
 
 /* ─── HERO ENHANCEMENT ─── */
-.bnr-slide{background-attachment:local}
-.bnr-title{background:linear-gradient(135deg,#fff 60%,rgba(255,255,255,.8) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-
 /* ─── SECTION HEADING ACCENT ─── */
 .sec-heading::after{display:none}
 
@@ -447,24 +453,7 @@ textarea.contact-input{resize:vertical;min-height:100px}
   .nav-wrap{justify-content:space-between}
 
   .banner-wrap{height:320px;min-height:260px}
-  .bnr-slide{position:absolute;inset:0;padding:36px 28px 0;flex-direction:row;gap:0;align-items:flex-start}
-  .bnr-right{display:none!important}
-  .bnr-slides{display:none}
-  .bnr-left{width:100%}
-  .bnr-title{font-size:clamp(22px,4vw,32px)}
-
-  .ins-grid{grid-template-columns:repeat(2,1fr);gap:12px}
-  .svc-grid{grid-template-columns:repeat(2,1fr)}
-  .adv-grid{grid-template-columns:repeat(2,1fr)}
-  .news-grid{grid-template-columns:repeat(2,1fr)}
-  .pgov-grid{grid-template-columns:repeat(3,1fr)}
-  .stats-grid{grid-template-columns:repeat(3,1fr)}
-
-  .sec{padding:48px 0}
-  .footer-main{padding:40px 0 28px}
-}
-
-/* ══════════════════════════════════════════
+  /* ══════════════════════════════════════════
    MOBILE  ≤640px
 ══════════════════════════════════════════ */
 @media(max-width:640px){
@@ -493,17 +482,6 @@ textarea.contact-input{resize:vertical;min-height:100px}
   /* ── BANNER ── */
   .banner-sec{padding:10px 0 0}
   .banner-wrap{border-radius:14px;min-height:260px;height:280px}
-  .bnr-slide{padding:20px 16px 60px;flex-direction:column;align-items:flex-start}
-  .bnr-right,.bnr-slides{display:none!important}
-  .bnr-left{width:100%}
-  .bnr-tag{font-size:9px;margin-bottom:10px}
-  .bnr-title{font-size:clamp(18px,5.5vw,24px);margin-bottom:8px;letter-spacing:-.2px}
-  .bnr-sub{font-size:12.5px;margin-bottom:16px;line-height:1.55}
-  .bnr-ctas{flex-direction:column;gap:8px}
-  .bnr-btn-w,.bnr-btn-o{width:100%;justify-content:center;font-size:13px;padding:10px 16px}
-  .bnr-arrow{bottom:12px;right:12px}
-  .bnr-arr{width:32px;height:32px;font-size:10px}
-
   /* ── INSURANCE CARDS ── */
   .ins-grid{grid-template-columns:1fr;gap:10px;margin-top:18px}
   .ins-card{padding:16px 14px 42px}
@@ -837,8 +815,52 @@ textarea.contact-input{resize:vertical;min-height:100px}
 }
 .ins-card:active{transform:translateY(-2px) scale(.97);transition:transform .08s ease}
 
+
+/* ─── UX POLISH ─── */
+::selection{background:var(--rs);color:var(--dark)}
+::-moz-selection{background:var(--rs);color:var(--dark)}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#f1f1f1}
+::-webkit-scrollbar-thumb{background:var(--red2);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--red)}
+/* Smooth focus rings */
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:4px}
+/* Phone input format hint */
+#cf-phone:invalid:not(:placeholder-shown){border-color:#e53935;box-shadow:0 0 0 3px rgba(229,57,53,.1)}
+#cf-phone:valid:not(:placeholder-shown){border-color:#2e7d32;box-shadow:0 0 0 3px rgba(46,125,50,.08)}
+/* Better button press feel */
+.kh-btn:active,.btn-red:active,.bnr-btn-w:active{transform:scale(.98)!important}
+/* Image shimmer placeholder */
+img{background:linear-gradient(90deg,#f0f0f0 25%,#e0e0e0 50%,#f0f0f0 75%);background-size:200% 100%}
+img[src]{background:none}
 </style>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Schema.org: InsuranceAgency -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "KAFIL-SUG'URTA",
+  "alternateName": "Kafil Sug'urta",
+  "url": "https://kafil.uz",
+  "logo": "https://kafil.uz/public/assets/foto/logo.svg",
+  "image": "https://kafil.uz/storage/pages-s/November2022/4oxu56aFKxahlA9eEQQL.png",
+  "description": "O'zbekiston Respublikasining ishonchli sug'urta kompaniyasi. Litsenziya № 0009. 2004-yildan faoliyatda.",
+  "telephone": "+998712000414",
+  "email": "info@kafil.uz",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mustaqillik shoh ko'chasi, 59",
+    "addressLocality": "Toshkent",
+    "postalCode": "100000",
+    "addressCountry": "UZ"
+  },
+  "foundingDate": "2004",
+  "numberOfEmployees": {"@type": "QuantitativeValue", "value": 150},
+  "areaServed": "UZ",
+  "sameAs": ["https://t.me/kafilsugurta"]
+}
+</script>
 </head>
 <body>
 <div id="scrollBar" style="width:0"></div>
@@ -1193,7 +1215,7 @@ textarea.contact-input{resize:vertical;min-height:100px}
       <!-- Left: Building photo (kafil.uz/uz style) -->
       <div class="col-lg-5 anim">
         <div style="border-radius:20px;overflow:hidden;position:relative;height:460px;background:linear-gradient(160deg,#1A2B4A 0%,#2D3F66 60%,#C0282C 100%)">
-          <img src="https://kafil.uz/storage/pages-s/November2022/4oxu56aFKxahlA9eEQQL.png" loading="lazy"
+          <img src="https://kafil.uz/storage/pages-s/November2022/4oxu56aFKxahlA9eEQQL.png" loading="eager" fetchpriority="high" width="600" height="460"
                alt="Kafil Sug'urta binosi"
                style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in;transition:transform .4s ease"
                onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform=''"
@@ -1876,15 +1898,15 @@ html{overflow-x:clip}
             <div class="row g-3">
               <div class="col-md-6">
                 <label style="font-size:11px;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;display:block">Ism Familiya *</label>
-                <input type="text" class="contact-input" placeholder="Abdullayev Sardor" required>
+                <input type="text" class="contact-input" placeholder="Abdullayev Sardor" required id="cf-name" autocomplete="name">
               </div>
               <div class="col-md-6">
                 <label style="font-size:11px;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;display:block">Telefon *</label>
-                <input type="tel" class="contact-input" placeholder="+998 90 123 45 67" required>
+                <input type="tel" class="contact-input" placeholder="+998 90 123 45 67" required pattern="[+]?[0-9\s\-]{9,15}" id="cf-phone" autocomplete="tel">
               </div>
               <div class="col-md-6">
                 <label style="font-size:11px;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;display:block">Email</label>
-                <input type="email" class="contact-input" placeholder="email@gmail.com">
+                <input type="email" class="contact-input" placeholder="email@gmail.com" id="cf-email" autocomplete="email">
               </div>
               <div class="col-md-6">
                 <label style="font-size:11px;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;display:block">Xizmat turi</label>
@@ -2092,18 +2114,25 @@ document.querySelectorAll('.ins-card').forEach(function(card){
   obs.observe(document.querySelector('.stat-panel') || document.body);
 })();
 
-// ─── HERO SLIDER (Slick — eskiz config) ───
+// ─── HERO SLIDER (Slick — deferred init) ───
 (function(){
   function initHero(){
-    if(window.jQuery && jQuery.fn && jQuery.fn.slick){
+    if(window.jQuery && jQuery.fn && jQuery.fn.slick && !jQuery('.slider__list').hasClass('slick-initialized')){
       jQuery('.slider__list').slick({
         dots:true, arrows:false, infinite:true,
-        autoplay:true, autoplaySpeed:5500, speed:600, fade:true, cssEase:'ease-out'
+        autoplay:true, autoplaySpeed:5500, speed:600, fade:true, cssEase:'ease-out',
+        lazyLoad:'ondemand'
       });
     }
   }
-  if(window.jQuery){ jQuery(initHero); }
-  else { window.addEventListener('load', initHero); }
+  // Works with both deferred and inline jQuery
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', function(){
+      window.addEventListener('load', initHero);
+    });
+  } else {
+    window.addEventListener('load', initHero);
+  }
 })();
 
 // ─── SCROLL REVEAL (IntersectionObserver) ───
@@ -2369,5 +2398,9 @@ document.querySelectorAll('.btn-red,.btn-nav-cta,.svc-btn').forEach(function(btn
   });
 });
 </script>
+
+<!-- Deferred scripts: jQuery + Slick (non-blocking) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
 </body>
 </html>
