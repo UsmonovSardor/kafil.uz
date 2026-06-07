@@ -950,8 +950,14 @@ textarea.contact-input{resize:vertical;min-height:100px}
           </div>
         </div>
         <div class="kh-right">
-          <div class="kh-photo" style="--pos:center">
-            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=80" alt="">
+          <div class="kh-anim">
+            <span class="kh-orb kh-orb--1"></span>
+            <span class="kh-orb kh-orb--2"></span>
+            <span class="kh-ring2"></span>
+            <i class="fas fa-car-side kh-ico"></i>
+            <span class="kh-ln kh-ln--1"></span>
+            <span class="kh-ln kh-ln--2"></span>
+            <span class="kh-ln kh-ln--3"></span>
           </div>
           <span class="kh-price"><span>285 000 so&#39;m</span> dan</span>
         </div>
@@ -974,8 +980,14 @@ textarea.contact-input{resize:vertical;min-height:100px}
           </div>
         </div>
         <div class="kh-right">
-          <div class="kh-photo" style="--pos:center">
-            <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=900&q=80" alt="">
+          <div class="kh-anim">
+            <span class="kh-orb kh-orb--1"></span>
+            <span class="kh-orb kh-orb--2"></span>
+            <span class="kh-ring2"></span>
+            <i class="fas fa-house-chimney kh-ico"></i>
+            <span class="kh-ln kh-ln--1"></span>
+            <span class="kh-ln kh-ln--2"></span>
+            <span class="kh-ln kh-ln--3"></span>
           </div>
           <span class="kh-price"><span>120 000 so&#39;m</span> dan</span>
         </div>
@@ -998,8 +1010,14 @@ textarea.contact-input{resize:vertical;min-height:100px}
           </div>
         </div>
         <div class="kh-right">
-          <div class="kh-photo" style="--pos:center">
-            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80" alt="">
+          <div class="kh-anim">
+            <span class="kh-orb kh-orb--1"></span>
+            <span class="kh-orb kh-orb--2"></span>
+            <span class="kh-ring2"></span>
+            <i class="fas fa-plane-up kh-ico"></i>
+            <span class="kh-ln kh-ln--1"></span>
+            <span class="kh-ln kh-ln--2"></span>
+            <span class="kh-ln kh-ln--3"></span>
           </div>
           <span class="kh-price"><span>45 000 so&#39;m</span> dan</span>
         </div>
@@ -1015,74 +1033,82 @@ textarea.contact-input{resize:vertical;min-height:100px}
 </section>
 
 <style>
-/* ===== KAFIL HERO (restrained, editorial) ===== */
+/* ===== KAFIL HERO (light, smooth — transform/opacity only) ===== */
 .kh-sec{padding:22px 0 0}
 .kh-wrap{position:relative}
 .kh-wrap .slider__list{margin:0;padding:0}
 .kh-card{position:relative;display:flex;align-items:stretch;min-height:404px;border-radius:22px;overflow:hidden;color:#fff}
-.kh-card--auto{--c:#5a1418;--c2:#83242a;background:linear-gradient(120deg,#4d1115 0%,#7a2026 100%)}
-.kh-card--home{--c:#0e2a27;--c2:#155049;background:linear-gradient(120deg,#0c2421 0%,#13524a 100%)}
-.kh-card--travel{--c:#15203c;--c2:#2a3a6e;background:linear-gradient(120deg,#121a33 0%,#283a73 100%)}
+.kh-card--auto{--c2:#83242a;background:linear-gradient(120deg,#4d1115 0%,#7a2026 100%)}
+.kh-card--home{--c2:#155049;background:linear-gradient(120deg,#0c2421 0%,#13524a 100%)}
+.kh-card--travel{--c2:#2a3a6e;background:linear-gradient(120deg,#121a33 0%,#283a73 100%)}
 
 .kh-left{position:relative;z-index:3;width:54%;display:flex;flex-direction:column;justify-content:center;padding:46px 0 46px 50px}
-.kh-tag{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.6px;color:rgba(255,255,255,.92);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:6px 14px;border-radius:50px;margin-bottom:18px;backdrop-filter:blur(6px)}
-.kh-tag i{font-size:12px;color:rgba(255,255,255,.9)}
+.kh-tag{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.6px;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:6px 14px;border-radius:50px;margin-bottom:18px}
+.kh-tag i{font-size:12px}
 .kh-title{font-size:clamp(24px,2.6vw,37px);font-weight:800;line-height:1.16;letter-spacing:-.5px;margin:0 0 14px;color:#fff}
 .kh-sub{font-size:clamp(14px,1.15vw,16px);line-height:1.65;color:rgba(255,255,255,.82);margin:0 0 26px;max-width:430px}
 .kh-cta{display:flex;flex-wrap:wrap;gap:11px;margin-bottom:24px}
-.kh-btn{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:700;padding:13px 26px;border-radius:50px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;border:1.5px solid transparent;white-space:nowrap}
+.kh-btn{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:700;padding:13px 26px;border-radius:50px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease;border:1.5px solid transparent;white-space:nowrap}
 .kh-btn--primary{background:#fff;color:var(--c2)}
 .kh-btn--primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.28)}
-.kh-btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
-.kh-btn--ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.8)}
+.kh-btn--ghost{background:rgba(255,255,255,.06);color:#fff;border-color:rgba(255,255,255,.4)}
+.kh-btn--ghost:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.8)}
 .kh-trust{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:rgba(255,255,255,.72)}
 .kh-trust span{display:inline-flex;align-items:center;gap:7px;font-weight:500}
 .kh-trust i{font-size:13px;color:rgba(255,255,255,.6)}
 .kh-trust__dot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.32)!important}
 
-/* ---- right blended photo (car approaching) ---- */
+/* ---- right: light ambient (GPU-only) ---- */
 .kh-right{position:relative;z-index:1;width:46%;flex-shrink:0}
-.kh-photo{position:absolute;inset:0;overflow:hidden}
-.kh-photo img{width:100%;height:100%;object-fit:cover;object-position:var(--pos,center);transform:scale(1);animation:kh-approach 18s ease-in-out infinite alternate}
-.kh-photo::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,var(--c) 0%,color-mix(in srgb,var(--c) 70%,transparent) 24%,transparent 62%)}
-.kh-photo::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(0deg,rgba(0,0,0,.32) 0%,transparent 34%)}
-.kh-price{position:absolute;z-index:4;left:8px;bottom:30px;display:inline-flex;align-items:baseline;gap:5px;font-size:12px;font-weight:500;color:rgba(255,255,255,.78);background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.18);padding:9px 16px;border-radius:12px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.kh-anim{position:absolute;inset:0;overflow:hidden}
+.kh-orb{position:absolute;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.16),rgba(255,255,255,0) 72%);will-change:transform}
+.kh-orb--1{width:280px;height:280px;top:-40px;right:-30px;animation:kh-f1 11s ease-in-out infinite alternate}
+.kh-orb--2{width:200px;height:200px;bottom:-50px;left:6%;animation:kh-f2 14s ease-in-out infinite alternate}
+.kh-ring2{position:absolute;top:50%;left:55%;width:248px;height:248px;margin:-124px 0 0 -124px;border-radius:50%;background:conic-gradient(from 0deg,rgba(255,255,255,0),rgba(255,255,255,.24) 28%,rgba(255,255,255,0) 56%);-webkit-mask:radial-gradient(closest-side,transparent 70%,#000 71%);mask:radial-gradient(closest-side,transparent 70%,#000 71%);animation:kh-rot 16s linear infinite;will-change:transform}
+.kh-ico{position:absolute;top:50%;left:55%;font-size:88px;color:rgba(255,255,255,.20);animation:kh-fy 6s ease-in-out infinite;will-change:transform}
+.kh-ln{position:absolute;left:0;height:2px;border-radius:2px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.45),rgba(255,255,255,0));width:120px;will-change:transform,opacity;animation:kh-slide 4.5s linear infinite}
+.kh-ln--1{top:33%}
+.kh-ln--2{top:53%;width:82px;animation-delay:1.5s;opacity:.7}
+.kh-ln--3{top:69%;width:100px;animation-delay:2.8s;opacity:.5}
+
+.kh-price{position:absolute;z-index:5;left:8px;bottom:30px;display:inline-flex;align-items:baseline;gap:5px;font-size:12px;font-weight:500;color:rgba(255,255,255,.8);background:rgba(0,0,0,.34);border:1px solid rgba(255,255,255,.18);padding:9px 16px;border-radius:12px}
 .kh-price span{font-size:17px;font-weight:800;color:#fff}
 
 /* ---- prev / next arrows ---- */
 .kh-arrows{position:absolute;right:24px;bottom:22px;display:flex;gap:9px;z-index:8}
-.kh-arrow{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:all .2s ease}
+.kh-arrow{width:42px;height:42px;border-radius:50%;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.4);color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s ease,transform .2s ease}
 .kh-arrow:hover{background:#fff;color:#111;transform:translateY(-1px)}
 
 /* ---- slick dots ---- */
 .kh-wrap .slider__list .slick-dots{position:absolute;bottom:32px;left:50px;right:auto;display:flex!important;justify-content:flex-start;gap:8px;list-style:none;margin:0;padding:0;z-index:6}
 .kh-wrap .slider__list .slick-dots li{margin:0;width:auto;height:auto}
-.kh-wrap .slider__list .slick-dots li button{width:8px;height:8px;padding:0;border-radius:50px;background:rgba(255,255,255,.45);border:none;text-indent:-9999px;overflow:hidden;cursor:pointer;transition:all .3s ease}
+.kh-wrap .slider__list .slick-dots li button{width:8px;height:8px;padding:0;border-radius:50px;background:rgba(255,255,255,.45);border:none;text-indent:-9999px;overflow:hidden;cursor:pointer;transition:width .3s ease,background .3s ease}
 .kh-wrap .slider__list .slick-dots li button:before{display:none}
 .kh-wrap .slider__list .slick-dots li.slick-active button{width:24px;background:#fff}
 
-@keyframes kh-approach{from{transform:scale(1.12)}to{transform:scale(1)}}
+@keyframes kh-f1{from{transform:translate3d(0,0,0)}to{transform:translate3d(-22px,16px,0)}}
+@keyframes kh-f2{from{transform:translate3d(0,0,0)}to{transform:translate3d(18px,-14px,0)}}
+@keyframes kh-rot{to{transform:rotate(360deg)}}
+@keyframes kh-fy{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,-58%)}}
+@keyframes kh-slide{0%{transform:translateX(-130%);opacity:0}18%{opacity:1}100%{transform:translateX(640%);opacity:0}}
 
 /* ---- responsive ---- */
 @media (max-width:991px){
-  .kh-left{width:64%;padding:38px 0 38px 36px}
-  .kh-photo::before{background:linear-gradient(90deg,var(--c) 0%,color-mix(in srgb,var(--c) 60%,transparent) 40%,transparent 88%)}
+  .kh-left{width:62%;padding:38px 0 38px 36px}
   .kh-card{min-height:330px}
   .kh-wrap .slider__list .slick-dots{left:36px;bottom:18px}
   .kh-arrows{right:18px;bottom:14px}
 }
 @media (max-width:576px){
   .kh-sec{padding:12px 0 0}
-  .kh-card{border-radius:18px;min-height:330px}
-  .kh-left{width:100%;padding:30px 22px 58px}
-  .kh-right{position:absolute;inset:0;width:100%;z-index:0}
-  .kh-photo::before{background:linear-gradient(0deg,var(--c) 14%,rgba(0,0,0,.3) 60%,rgba(0,0,0,.45) 100%)}
-  .kh-price{display:none}
+  .kh-card{border-radius:18px;min-height:300px}
+  .kh-left{width:100%;padding:30px 22px 56px}
+  .kh-right{display:none}
   .kh-cta{flex-direction:column;align-items:stretch}
   .kh-btn{justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){
-  .kh-photo img{animation:none!important}
+  .kh-orb,.kh-ring2,.kh-ico,.kh-ln{animation:none!important}
 }
 </style>
 
@@ -2019,7 +2045,7 @@ document.querySelectorAll('.ins-card').forEach(function(card){
     if(window.jQuery && jQuery.fn && jQuery.fn.slick){
       jQuery('.slider__list').slick({
         dots:true, arrows:false, infinite:true,
-        autoplay:true, autoplaySpeed:5000, speed:1500, fade:true, cssEase:'ease'
+        autoplay:true, autoplaySpeed:5500, speed:600, fade:true, cssEase:'ease-out'
       });
     }
   }
