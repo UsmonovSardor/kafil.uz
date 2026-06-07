@@ -1516,17 +1516,57 @@ html{overflow-x:clip}
    SENIOR MOBILE COMPACT — ≤576px
 ══════════════════════════════════════════ */
 @media(max-width:576px){
-  /* ── HERO: kichroq va to'liq ko'rinadigan ── */
-  .kh-card{min-height:250px!important;border-radius:16px!important}
-  .kh-left{padding:20px 18px 46px!important}
-  .kh-tag{margin-bottom:10px!important;padding:4px 11px!important;font-size:10px!important}
-  .kh-title{font-size:clamp(20px,5.8vw,24px)!important;margin-bottom:10px!important;letter-spacing:-.3px!important}
-  .kh-sub{font-size:13px!important;line-height:1.55!important;margin-bottom:14px!important}
-  .kh-cta{gap:8px!important;margin-bottom:12px!important}
-  .kh-btn{padding:10px 18px!important;font-size:13px!important}
-  .kh-trust{font-size:11px!important;gap:8px!important}
-  .kh-price{font-size:11px!important;padding:7px 12px!important;left:6px!important;bottom:16px!important}
-  .kh-price span{font-size:15px!important}
+  /* ══ HERO: neoinsurance uslubi — matn chap, animatsiya o'ng ══ */
+  .kh-card{min-height:0!important;height:auto!important;border-radius:16px!important}
+  /* LEFT: 55% — faqat asosiy kontent */
+  .kh-left{width:55%!important;padding:18px 0 44px 16px!important}
+  /* RIGHT: 45% — animatsiya ko'rinadi */
+  .kh-right{display:block!important;width:45%!important}
+
+  /* Badge yashirish — joy tejash */
+  .kh-tag{display:none!important}
+
+  /* Sarlavha: katta, 2 qator, qisqa */
+  .kh-title{font-size:17px!important;margin-bottom:0!important;
+    letter-spacing:-.3px!important;line-height:1.22!important;
+    display:-webkit-box!important;-webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;overflow:hidden!important}
+
+  /* Subtitle yashirish — mobile uchun keraksiz */
+  .kh-sub{display:none!important}
+
+  /* Faqat bitta tugma (primary) */
+  .kh-btn--ghost{display:none!important}
+  .kh-cta{flex-direction:row!important;margin-bottom:0!important;gap:0!important}
+  .kh-btn--primary{
+    padding:8px 14px!important;font-size:12px!important;
+    gap:5px!important;white-space:nowrap!important;
+    margin-top:10px!important
+  }
+
+  /* Trust yashirish */
+  .kh-trust{display:none!important}
+
+  /* Animatsiya: ekranga mos kichik */
+  .kh-ico{font-size:62px!important}
+  .kh-ring2{width:160px!important;height:160px!important;margin:-80px 0 0 -80px!important}
+  .kh-orb--1{width:180px!important;height:180px!important;top:-20px!important;right:-10px!important}
+  .kh-orb--2{width:120px!important;height:120px!important}
+
+  /* Narx badge — pastda chiroyli */
+  .kh-price{
+    font-size:10px!important;padding:5px 10px!important;
+    left:16px!important;bottom:10px!important;border-radius:8px!important
+  }
+  .kh-price span{font-size:13px!important}
+
+  /* Arrows: o'ng pastda kichik */
+  .kh-arrows{right:6px!important;bottom:6px!important;gap:5px!important}
+  .kh-arrow{width:28px!important;height:28px!important;font-size:10px!important}
+  .kh-wrap .slider__list .slick-dots{left:16px!important;bottom:10px!important}
+  /* Min-height override — karta ostidagi bo'sh joy yo'q qilish */
+  .kh-wrap{min-height:0!important}
+  .kh-wrap .slider__list{min-height:0!important}
 
   /* ── AFZALLIKLAR: section spacing ── */
   .adv-premium-grid{gap:10px!important}
